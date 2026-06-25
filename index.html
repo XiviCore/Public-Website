@@ -201,11 +201,40 @@ across multiple lines.
     <h2>This is an example form, it doesn't submit to anything</h2>
     <h3>Submit button currently takes you to the top of the page</h3>
     <form action="">
+        <fieldset>
+            <legend>Personal Info / Preferences</legend>
             <label for="name"> Preferred Name :
                 <input required type="text" 
                 name="preferred-name" 
                 id="name" 
-                placeholder="Lily Strife">
+                placeholder="e.g, Lily Strife"
+                size="30"
+                required>
+            </label>
+<br>
+            <legend> 
+            <label for="age"> Age (Optional) : </label>
+                <input required type="number" 
+                name="age" 
+                id="user age" 
+                placeholder="20"
+                min="1"
+                max="120"
+                minlength="1"
+                maxlength="3"
+                size="3"
+                required>
+<br>
+            <label for="user pronouns"> Preferred Pronouns :
+                <input required type="text" 
+                name="pronouns" 
+                id="user pronouns" 
+                placeholder="e.g, She/Her, They/Them"
+                minlength="4"
+                maxlength="25"
+                size="27"
+                required>
+                
             </label>
     <br>
             <label for="user email"> Email :
@@ -214,27 +243,72 @@ across multiple lines.
                 id="user email" 
                 placeholder="example@email.com"
                 minlength="4"
-                maxlength="50">
-            </label>
-    <br>
-            <label for="user pronouns"> Preferred Pronouns :
-                <input required type="text" 
-                name="pronouns" 
-                id="user pronouns" 
-                placeholder="She/Her, They/Them">
+                maxlength="40"
+                size="39"
+                required>
             </label>
     <br>
             <label for="favorite food"> Favorite Food : </label>
                 <input type="text" 
                 name="food" 
                 id="favorite food" 
-                placeholder="Cheeseburger">
+                placeholder="e.g, Cheeseburger"
+                minlength ="2"
+                maxlengt="25"
+                size="32"
+                required>
     <br>
             <label for="favorite music"> Favorite Music Genre : </label>
                 <input type="text"  
                 name="music" 
                 id="favorite music" 
-                placeholder="Vaporwave">  
+                placeholder="e.g, Vaporwave"
+                minlength="2"
+                maxlength="25"
+                size="25"
+                required>  
+    <br>
+            <legend> Are you religious? </legend>
+                <input type="radio" 
+                id="yes-option"
+                name="religion"
+                value="yes">
+                <label for="yes-option"> Yes </label>
+               <input type="radio" 
+                id="no-option"
+                name="religion"
+                value="no">
+                <label for="no-option"> No </label>
+                <input type="radio" 
+                id="unsure-option"
+                name="religion"
+                value="unsure">
+                <label for="unsure-option"> Unsure </label>
+            <legend> If unsure, do you know why? </legend>
+            <input type="checkbox" 
+            id="agnostic"
+            name="unsure" 
+            value="agnostic">
+            <label for="agnostic"> I am agnostic (Not convinced towards religion or aetheism) </label>
+    <br>
+            <input type="checkbox" 
+            id="thought"
+            name="unsure" 
+            value="thought">
+            <label for="thought"> I haven't thought  much about religion </label>
+    <br>
+            <input type="checkbox" 
+            id="bad"
+            name="unsure" 
+            value="bad">
+            <label for="bad"> I have bad experiences associated with religion </label>
+    <br>
+            <input type="checkbox" 
+            id="thought"
+            name="unsure" 
+            value="thought">
+            <label for="thought"> Other </label>
+        </fieldset> 
     <br>
         <button id="submit"> Submit </button>
     </form>

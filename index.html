@@ -266,8 +266,10 @@ across multiple lines.
                 minlength="2"
                 maxlength="25"
                 size="25"
-                required>  
-    <br>
+                required>
+        </fieldset>
+        <fieldset>
+        <legend> Religion </legend>
             <legend> Are you religious? </legend>
                 <input type="radio" 
                 id="yes-option"
@@ -285,32 +287,50 @@ across multiple lines.
                 value="unsure">
                 <label for="unsure-option"> Unsure </label>
             <legend> If unsure, do you know why? </legend>
-            <input type="checkbox" 
-            id="agnostic"
-            name="unsure" 
-            value="agnostic">
-            <label for="agnostic"> I am agnostic (Not convinced towards religion or aetheism) </label>
+                <input type="checkbox" 
+                id="agnostic"
+                name="unsure" 
+                value="agnostic">
+                <label for="agnostic"> I am agnostic (Not convinced towards religion or aetheism) </label>
     <br>
-            <input type="checkbox" 
-            id="thought"
-            name="unsure" 
-            value="thought">
-            <label for="thought"> I haven't thought  much about religion </label>
+                <input type="checkbox" 
+                id="thought"
+                name="unsure" 
+                value="thought">
+                <label for="thought"> I haven't thought  much about religion </label>
     <br>
-            <input type="checkbox" 
-            id="bad"
-            name="unsure" 
-            value="bad">
-            <label for="bad"> I have bad experiences associated with religion </label>
+                <input type="checkbox" 
+                id="bad"
+                name="unsure" 
+                value="bad">
+                <label for="bad"> I have bad experiences associated with religion </label>
     <br>
-            <input type="checkbox" 
-            id="thought"
-            name="unsure" 
-            value="thought">
-            <label for="thought"> Other </label>
+                <input type="checkbox" 
+                id="thought"
+                name="unsure" 
+                value="thought">
+                <label for="thought"> Other </label>
+        </fieldset>  
+        <fieldset>
+            <legend> Cities</legend>
+        
+                <label for="city"> Choose the city you like the most: </label>
+                <select id="city" name="city">
+                    <option value="minneapolis"> Minneapolis </option>
+                    <option value="new york"> New York </option>
+                    <option value="dallas"> Dallas </option>
+                    <option value="chicago"> Chicago </option>
+                    <option value="los angeles"> Los Angeles </option>
+                    <option value="miami"> Miami </option>
+                </select>
         </fieldset> 
     <br>
+        <label for="comments"> What do you think of the website?  </label>
+    <br>
+        <textarea id="comments" name="comments" cols="30" rows="10"> </textarea>
+    <br>
         <button id="submit"> Submit </button>
+
     </form>
 
     </section> 
